@@ -100,7 +100,6 @@
 		1619403623098B6300A8DB9F /* swift-marsrovertechchallenge */ = {
 			isa = PBXGroup;
 			children = (
-				16362C522309B8A000B3D8FB /* Direction */,
 				1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */,
 				1619403823098B6300A8DB9F /* Info.plist */,
 				1619404423098B6300A8DB9F /* InfoTests.plist */,
@@ -110,6 +109,7 @@
 				1675635F2309903A0013D119 /* Position.swift */,
 				1675635B23098E7F0013D119 /* Rover.swift */,
 				1619404223098B6300A8DB9F /* RoverTests.swift */,
+				16362C522309B8A000B3D8FB /* Direction */,
 			);
 			path = "swift-marsrovertechchallenge";
 			sourceTree = "<group>";

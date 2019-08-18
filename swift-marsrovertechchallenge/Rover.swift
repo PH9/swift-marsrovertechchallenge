@@ -24,6 +24,9 @@ class Rover {
       } else if face == .south {
         y -= 1
         return
+      } else if face == .west {
+        x -= 1
+        return
       }
       if y + 1 <= maps?.maxY ?? Int.max {
         y += 1

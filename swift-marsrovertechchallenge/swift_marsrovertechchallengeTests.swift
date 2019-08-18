@@ -84,6 +84,14 @@ class swift_marsrovertechchallengeTests: XCTestCase {
     XCTAssertEqual(expectedPosition, rover.position)
   }
 
+  func testWhenFaceWestAndMoveShouldBeInNextPosition() {
+    let rover = Rover(x: 1, y: 2, face: .west)
+    rover.operate(command: .move)
+
+    let expectedPosition = Position(x: 0, y: 2, face: .west)
+    XCTAssertEqual(expectedPosition, rover.position)
+  }
+
   func testRawValueOfRoverCommandShouldBeIntegrity() {
     XCTAssertEqual("L", Rover.Command.turnLeft.rawValue)
     XCTAssertEqual("R", Rover.Command.turnRight.rawValue)

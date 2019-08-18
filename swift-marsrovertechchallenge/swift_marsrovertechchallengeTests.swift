@@ -108,6 +108,15 @@ class swift_marsrovertechchallengeTests: XCTestCase {
     XCTAssertEqual(expectedPosition, rover.position)
   }
 
+  func testWhenMoveShouldBeInTheSamePositionIfReachMinX() {
+    let rover = Rover(x: 0, y: 2, face: .west)
+    let maps = Maps(maxX: dummyX, maxY: dummyY)
+    rover.maps = maps
+    rover.operate(command: .move)
+
+    let expectedPosition = Position(x: 0, y: 2, face: .west)
+    XCTAssertEqual(expectedPosition, rover.position)
+  }
 
   func testRawValueOfRoverCommandShouldBeIntegrity() {
     XCTAssertEqual("L", Rover.Command.turnLeft.rawValue)

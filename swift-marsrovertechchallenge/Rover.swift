@@ -32,7 +32,9 @@ class Rover {
           y -= 1
         }
       case .west:
-        x -= 1
+        if x - 1 >= 0 {
+          x -= 1
+        }
       }
     }
   }

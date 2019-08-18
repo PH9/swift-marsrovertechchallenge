@@ -34,16 +34,7 @@ class Rover {
   }
 
   func operateTurnRightCommand() {
-    switch face {
-    case .north:
-      face = .east
-    case .east:
-      face = .south
-    case .south:
-      face = .west
-    case .west:
-      face = .north
-    }
+    face = face.nextClockWise
   }
 
   var position: Position {

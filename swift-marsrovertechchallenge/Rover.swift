@@ -14,13 +14,17 @@ class Rover {
   func operate(command: Command) {
     switch command {
     case .turnLeft:
-      if face == .west {
-        face = .south
-        return
-      } else if face == .south {
-        face = .east
-        return
-      }
+      operateTurnLeftCommand()
+    }
+  }
+
+  func operateTurnLeftCommand() {
+    if face == .west {
+      face = .south
+      return
+    } else if face == .south {
+      face = .east
+      return
     }
     face = .west
   }

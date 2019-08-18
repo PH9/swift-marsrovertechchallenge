@@ -1,7 +1,7 @@
 import XCTest
 @testable import swift_marsrovertechchallenge
 
-class swift_marsrovertechchallengeTests: XCTestCase {
+class RoverTests: XCTestCase {
 
   let dummyX = 1
   let dummyY = 2

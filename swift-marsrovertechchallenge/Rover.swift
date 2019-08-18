@@ -18,23 +18,27 @@ class Rover {
     case .turnRight:
       operateTurnRightCommand()
     case .move:
-      switch face {
-      case .north:
-        if y + 1 <= maps?.maxY ?? Int.max {
-          y += 1
-        }
-      case .east:
-        if x + 1 <= maps?.maxX ?? Int.max {
-          x += 1
-        }
-      case .south:
-        if y - 1 >= 0 {
-          y -= 1
-        }
-      case .west:
-        if x - 1 >= 0 {
-          x -= 1
-        }
+      operateMoveCommand()
+    }
+  }
+
+  func operateMoveCommand() {
+    switch face {
+    case .north:
+      if y + 1 <= maps?.maxY ?? Int.max {
+        y += 1
+      }
+    case .east:
+      if x + 1 <= maps?.maxX ?? Int.max {
+        x += 1
+      }
+    case .south:
+      if y - 1 >= 0 {
+        y -= 1
+      }
+    case .west:
+      if x - 1 >= 0 {
+        x -= 1
       }
     }
   }

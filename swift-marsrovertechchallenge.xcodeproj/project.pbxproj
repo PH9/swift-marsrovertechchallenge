@@ -13,6 +13,7 @@
 		1675635A23098E340013D119 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635923098E340013D119 /* Maps.swift */; };
 		1675635C23098E7F0013D119 /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635B23098E7F0013D119 /* Rover.swift */; };
 		1675635E23098EF90013D119 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635D23098EF90013D119 /* Direction.swift */; };
+		167563602309903A0013D119 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635F2309903A0013D119 /* Position.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		1675635923098E340013D119 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		1675635B23098E7F0013D119 /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
 		1675635D23098EF90013D119 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		1675635F2309903A0013D119 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,11 @@
 				1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */,
 				1619403823098B6300A8DB9F /* Info.plist */,
 				1619404423098B6300A8DB9F /* InfoTests.plist */,
+				1675635D23098EF90013D119 /* Direction.swift */,
 				1675635923098E340013D119 /* Maps.swift */,
+				1675635F2309903A0013D119 /* Position.swift */,
 				1675635B23098E7F0013D119 /* Rover.swift */,
 				1619404223098B6300A8DB9F /* swift_marsrovertechchallengeTests.swift */,
-				1675635D23098EF90013D119 /* Direction.swift */,
 			);
 			path = "swift-marsrovertechchallenge";
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			files = (
 				1675635C23098E7F0013D119 /* Rover.swift in Sources */,
 				1675635A23098E340013D119 /* Maps.swift in Sources */,
+				167563602309903A0013D119 /* Position.swift in Sources */,
 				1675635E23098EF90013D119 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

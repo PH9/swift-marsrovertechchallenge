@@ -3,8 +3,15 @@ import XCTest
 
 class swift_marsrovertechchallengeTests: XCTestCase {
   
-  func test_() {
+  func test_create_maps() {
     let maps = Maps(maxX: 5, maxY: 5)
+  }
+  
+  func test_rover_move() {
     let rover = Rover(x: 1, y: 2, face: .north)
+    rover.operate(command: .turnLeft)
+
+    let expectedPosition = Position(x: 1, y: 2, face: .west)
+    XCTAssertEqual(expectedPosition, rover.position)
   }
 }

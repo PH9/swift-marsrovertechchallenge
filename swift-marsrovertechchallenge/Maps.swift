@@ -1,6 +1,5 @@
-class Maps {
-  
-  init(maxX: Int, maxY: Int) {
-    
-  }
+struct Maps {
+
+  let maxX: Int
+  let maxY: Int
 }

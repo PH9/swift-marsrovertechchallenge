@@ -1,6 +1,6 @@
 class Rover {
   
-  weak var maps: Maps?
+  var maps: Maps?
   private var x: Int
   private var y: Int
   private var face: Direction
@@ -18,7 +18,9 @@ class Rover {
     case .turnRight:
       operateTurnRightCommand()
     case .move:
-      y += 1
+      if y + 1 <= maps?.maxY ?? Int.max {
+        y += 1
+      }
     }
   }
 

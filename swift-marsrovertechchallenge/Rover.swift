@@ -19,17 +19,16 @@ class Rover {
   }
 
   func operateTurnLeftCommand() {
-    if face == .west {
+    switch face {
+    case .north:
+      face = .west
+    case .west:
       face = .south
-      return
-    } else if face == .south {
+    case .south:
       face = .east
-      return
-    } else if face == .east {
+    case .east:
       face = .north
-      return
     }
-    face = .west
   }
 
   var position: Position {

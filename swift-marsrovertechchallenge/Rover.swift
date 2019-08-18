@@ -15,6 +15,8 @@ class Rover {
     switch command {
     case .turnLeft:
       operateTurnLeftCommand()
+    case .turnRight:
+      operateTurnRightCommand()
     }
   }
 
@@ -31,11 +33,25 @@ class Rover {
     }
   }
 
+  func operateTurnRightCommand() {
+    switch face {
+    case .north:
+      face = .east
+    case .east:
+      face = .south
+    case .south:
+      face = .west
+    case .west:
+      face = .north
+    }
+  }
+
   var position: Position {
     return Position(x: x, y: y, face: face)
   }
 
   enum Command: String {
     case turnLeft = "L"
+    case turnRight = "R"
   }
 }

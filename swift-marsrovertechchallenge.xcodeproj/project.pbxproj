@@ -100,16 +100,14 @@
 		1619403623098B6300A8DB9F /* swift-marsrovertechchallenge */ = {
 			isa = PBXGroup;
 			children = (
+				16362C642309C12700B3D8FB /* Command */,
 				1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */,
 				1619403823098B6300A8DB9F /* Info.plist */,
 				1619404423098B6300A8DB9F /* InfoTests.plist */,
-				16362C502309B88400B3D8FB /* Command.swift */,
-				16362C4E2309B87500B3D8FB /* CommandProtocol.swift */,
 				1675635923098E340013D119 /* Maps.swift */,
 				1675635F2309903A0013D119 /* Position.swift */,
 				1675635B23098E7F0013D119 /* Rover.swift */,
 				1619404223098B6300A8DB9F /* RoverTests.swift */,
-				16362C522309B8A000B3D8FB /* Direction */,
 			);
 			path = "swift-marsrovertechchallenge";
 			sourceTree = "<group>";
@@ -129,6 +127,16 @@
 				16362C622309BAA300B3D8FB /* WestTests.swift */,
 			);
 			path = Direction;
+			sourceTree = "<group>";
+		};
+		16362C642309C12700B3D8FB /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				16362C502309B88400B3D8FB /* Command.swift */,
+				16362C4E2309B87500B3D8FB /* CommandProtocol.swift */,
+				16362C522309B8A000B3D8FB /* Direction */,
+			);
+			path = Command;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -10,6 +10,9 @@
 		1619403E23098B6300A8DB9F /* swift_marsrovertechchallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1619403423098B6300A8DB9F /* swift_marsrovertechchallenge.framework */; };
 		1619404523098B6300A8DB9F /* swift_marsrovertechchallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = 1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1675635723098CB60013D119 /* swift_marsrovertechchallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619404223098B6300A8DB9F /* swift_marsrovertechchallengeTests.swift */; };
+		1675635A23098E340013D119 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635923098E340013D119 /* Maps.swift */; };
+		1675635C23098E7F0013D119 /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635B23098E7F0013D119 /* Rover.swift */; };
+		1675635E23098EF90013D119 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635D23098EF90013D119 /* Direction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		1619403D23098B6300A8DB9F /* swift-marsrovertechchallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-marsrovertechchallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1619404223098B6300A8DB9F /* swift_marsrovertechchallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_marsrovertechchallengeTests.swift; sourceTree = "<group>"; };
 		1619404423098B6300A8DB9F /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
+		1675635923098E340013D119 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
+		1675635B23098E7F0013D119 /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
+		1675635D23098EF90013D119 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +79,10 @@
 				1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */,
 				1619403823098B6300A8DB9F /* Info.plist */,
 				1619404423098B6300A8DB9F /* InfoTests.plist */,
+				1675635923098E340013D119 /* Maps.swift */,
+				1675635B23098E7F0013D119 /* Rover.swift */,
 				1619404223098B6300A8DB9F /* swift_marsrovertechchallengeTests.swift */,
+				1675635D23098EF90013D119 /* Direction.swift */,
 			);
 			path = "swift-marsrovertechchallenge";
 			sourceTree = "<group>";
@@ -140,6 +149,7 @@
 				TargetAttributes = {
 					1619403323098B6300A8DB9F = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					1619403C23098B6300A8DB9F = {
 						CreatedOnToolsVersion = 10.3;
@@ -186,6 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1675635C23098E7F0013D119 /* Rover.swift in Sources */,
+				1675635A23098E340013D119 /* Maps.swift in Sources */,
+				1675635E23098EF90013D119 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +346,7 @@
 		1619404923098B6300A8DB9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -349,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.ph9.swift-marsrovertechchallenge";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -357,6 +372,7 @@
 		1619404A23098B6300A8DB9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -381,6 +397,7 @@
 		1619404C23098B6300A8DB9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "swift-marsrovertechchallenge/InfoTests.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -398,6 +415,7 @@
 		1619404D23098B6300A8DB9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "swift-marsrovertechchallenge/InfoTests.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

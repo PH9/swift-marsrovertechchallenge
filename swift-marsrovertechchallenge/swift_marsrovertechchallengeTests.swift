@@ -4,6 +4,7 @@ import XCTest
 class swift_marsrovertechchallengeTests: XCTestCase {
   
   func test_() {
-    // DUMMY TEST OR IT FAIL
+    let maps = Maps(maxX: 5, maxY: 5)
+    let rover = Rover(x: 1, y: 2, face: .north)
   }
 }

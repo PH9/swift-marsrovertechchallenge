@@ -55,7 +55,7 @@ class swift_marsrovertechchallengeTests: XCTestCase {
   }
 
   func testWhenMoveShouldBeInTheSamePositionIfReachMaxY() {
-    let rover = Rover(x: 1, y: 2, face:. north)
+    let rover = Rover(x: 1, y: 2, face: .north)
     let maps = Maps(maxX: 1, maxY: 2)
     rover.maps = maps
     rover.operate(command: .move)
@@ -73,7 +73,7 @@ class swift_marsrovertechchallengeTests: XCTestCase {
   }
 
   func testWhenMoveShouldBeInTheSamePositionIfReachMaxX() {
-    let rover = Rover(x: 1, y: 2, face:. east)
+    let rover = Rover(x: 1, y: 2, face: .east)
     let maps = Maps(maxX: 1, maxY: 2)
     rover.maps = maps
     rover.operate(command: .move)
@@ -91,7 +91,7 @@ class swift_marsrovertechchallengeTests: XCTestCase {
   }
 
   func testWhenMoveShouldBeInTheSamePositionIfReachMinY() {
-    let rover = Rover(x: 1, y: 0, face:. south)
+    let rover = Rover(x: 1, y: 0, face: .south)
     let maps = Maps(maxX: dummyX, maxY: dummyY)
     rover.maps = maps
     rover.operate(command: .move)
@@ -100,7 +100,6 @@ class swift_marsrovertechchallengeTests: XCTestCase {
     XCTAssertEqual(expectedPosition, rover.position)
   }
 
-
   func testWhenFaceWestAndMoveShouldBeInNextPosition() {
     let rover = Rover(x: 1, y: 2, face: .west)
     rover.operate(command: .move)
@@ -108,6 +107,7 @@ class swift_marsrovertechchallengeTests: XCTestCase {
     let expectedPosition = Position(x: 0, y: 2, face: .west)
     XCTAssertEqual(expectedPosition, rover.position)
   }
+
 
   func testRawValueOfRoverCommandShouldBeIntegrity() {
     XCTAssertEqual("L", Rover.Command.turnLeft.rawValue)

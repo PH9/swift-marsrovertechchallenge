@@ -6,10 +6,6 @@ class swift_marsrovertechchallengeTests: XCTestCase {
   let dummyX = 1
   let dummyY = 2
   
-  func test_create_maps() {
-    let maps = Maps(maxX: 5, maxY: 5)
-  }
-  
   func testWhenTurnLeftDirectionShouldBeNextCounterclockwise() {
     let rover = Rover(x: dummyX, y: dummyY, face: .north)
 

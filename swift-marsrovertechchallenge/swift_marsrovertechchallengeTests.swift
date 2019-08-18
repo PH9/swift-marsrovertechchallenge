@@ -90,6 +90,17 @@ class swift_marsrovertechchallengeTests: XCTestCase {
     XCTAssertEqual(expectedPosition, rover.position)
   }
 
+  func testWhenMoveShouldBeInTheSamePositionIfReachMinY() {
+    let rover = Rover(x: 1, y: 0, face:. south)
+    let maps = Maps(maxX: dummyX, maxY: dummyY)
+    rover.maps = maps
+    rover.operate(command: .move)
+
+    let expectedPosition = Position(x: 1, y: 0, face: .south)
+    XCTAssertEqual(expectedPosition, rover.position)
+  }
+
+
   func testWhenFaceWestAndMoveShouldBeInNextPosition() {
     let rover = Rover(x: 1, y: 2, face: .west)
     rover.operate(command: .move)

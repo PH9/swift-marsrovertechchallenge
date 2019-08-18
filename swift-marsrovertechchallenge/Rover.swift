@@ -28,7 +28,9 @@ class Rover {
           x += 1
         }
       case .south:
-        y -= 1
+        if y - 1 >= 0 {
+          y -= 1
+        }
       case .west:
         x -= 1
       }

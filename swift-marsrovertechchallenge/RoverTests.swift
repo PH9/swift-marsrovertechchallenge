@@ -82,24 +82,6 @@ class RoverTests: XCTestCase {
     XCTAssertEqual(expectedPosition, rover.position)
   }
 
-  func testWhenFaceSouthAndMoveShouldBeInNextPosition() {
-    let rover = Rover(x: 1, y: 2, face: South())
-    rover.operate(command: Move())
-
-    let expectedPosition = Position(x: 1, y: 1, face: South())
-    XCTAssertEqual(expectedPosition, rover.position)
-  }
-
-  func testWhenMoveShouldBeInTheSamePositionIfReachMinY() {
-    let rover = Rover(x: 1, y: 0, face: South())
-    let maps = Maps(maxX: dummyX, maxY: dummyY)
-    rover.maps = maps
-    rover.operate(command: Move())
-
-    let expectedPosition = Position(x: 1, y: 0, face: South())
-    XCTAssertEqual(expectedPosition, rover.position)
-  }
-
   func testWhenFaceWestAndMoveShouldBeInNextPosition() {
     let rover = Rover(x: 1, y: 2, face: West())
     rover.operate(command: Move())

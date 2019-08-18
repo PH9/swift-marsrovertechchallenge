@@ -25,6 +25,9 @@ class Rover {
     } else if face == .south {
       face = .east
       return
+    } else if face == .east {
+      face = .north
+      return
     }
     face = .west
   }

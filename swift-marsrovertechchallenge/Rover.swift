@@ -24,7 +24,9 @@ class Rover {
           y += 1
         }
       case .east:
-        x += 1
+        if x + 1 <= maps?.maxX ?? Int.max {
+          x += 1
+        }
       case .south:
         y -= 1
       case .west:

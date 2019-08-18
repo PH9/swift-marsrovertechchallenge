@@ -17,6 +17,8 @@ class Rover {
       operateTurnLeftCommand()
     case .turnRight:
       operateTurnRightCommand()
+    case .move:
+      y += 1
     }
   }
 
@@ -35,5 +37,6 @@ class Rover {
   enum Command: String {
     case turnLeft = "L"
     case turnRight = "R"
+    case move = "M"
   }
 }

@@ -49,4 +49,12 @@ class swift_marsrovertechchallengeTests: XCTestCase {
     let expectedFaceNorth = Position(x: dummyX, y: dummyY, face: .north)
     XCTAssertEqual(expectedFaceNorth, rover.position)
   }
+
+  func testWhenMoveShouldBeInNextPosition() {
+    let rover = Rover(x: 1, y: 2, face: .north)
+    rover.operate(command: .move)
+
+    let expectedPosition = Position(x: 1, y: 3, face: .north)
+    XCTAssertEqual(expectedPosition, rover.position)
+  }
 }

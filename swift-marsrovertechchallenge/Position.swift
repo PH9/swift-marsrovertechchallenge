@@ -6,6 +6,6 @@ struct Position: Equatable {
   static func == (lhs: Position, rhs: Position) -> Bool {
     return lhs.x == rhs.x
       && lhs.y == rhs.y
-      && lhs.face.rawValue == rhs.face.rawValue
+      && type(of: lhs.face) == type(of: rhs.face)
   }
 }

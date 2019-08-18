@@ -7,7 +7,7 @@ class swift_marsrovertechchallengeTests: XCTestCase {
     let maps = Maps(maxX: 5, maxY: 5)
   }
   
-  func test_rover_move() {
+  func testWhenRoverFaceNorth_afterTurnLeftShouldFaceWest() {
     let rover = Rover(x: 1, y: 2, face: .north)
     rover.operate(command: .turnLeft)
 

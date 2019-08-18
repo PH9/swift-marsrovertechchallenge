@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16007A122309C38200446F5B /* PositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16007A112309C38200446F5B /* PositionTests.swift */; };
 		1619403E23098B6300A8DB9F /* swift_marsrovertechchallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1619403423098B6300A8DB9F /* swift_marsrovertechchallenge.framework */; };
 		1619404523098B6300A8DB9F /* swift_marsrovertechchallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = 1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16362C4F2309B87500B3D8FB /* CommandProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C4E2309B87500B3D8FB /* CommandProtocol.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16007A112309C38200446F5B /* PositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionTests.swift; sourceTree = "<group>"; };
 		1619403423098B6300A8DB9F /* swift_marsrovertechchallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swift_marsrovertechchallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swift_marsrovertechchallenge.h; sourceTree = "<group>"; };
 		1619403823098B6300A8DB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,14 +102,15 @@
 		1619403623098B6300A8DB9F /* swift-marsrovertechchallenge */ = {
 			isa = PBXGroup;
 			children = (
-				16362C642309C12700B3D8FB /* Command */,
 				1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */,
 				1619403823098B6300A8DB9F /* Info.plist */,
 				1619404423098B6300A8DB9F /* InfoTests.plist */,
 				1675635923098E340013D119 /* Maps.swift */,
 				1675635F2309903A0013D119 /* Position.swift */,
+				16007A112309C38200446F5B /* PositionTests.swift */,
 				1675635B23098E7F0013D119 /* Rover.swift */,
 				1619404223098B6300A8DB9F /* RoverTests.swift */,
+				16362C642309C12700B3D8FB /* Command */,
 			);
 			path = "swift-marsrovertechchallenge";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1675635723098CB60013D119 /* RoverTests.swift in Sources */,
+				16007A122309C38200446F5B /* PositionTests.swift in Sources */,
 				16362C5F2309BA0500B3D8FB /* NorthTests.swift in Sources */,
 				16362C632309BAA300B3D8FB /* WestTests.swift in Sources */,
 				16362C612309BA8A00B3D8FB /* SouthTests.swift in Sources */,

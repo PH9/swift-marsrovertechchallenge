@@ -17,6 +17,8 @@
 		16362C5A2309B8E300B3D8FB /* West.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C592309B8E300B3D8FB /* West.swift */; };
 		16362C5D2309B92D00B3D8FB /* EastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C5B2309B8F400B3D8FB /* EastTests.swift */; };
 		16362C5F2309BA0500B3D8FB /* NorthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C5E2309BA0500B3D8FB /* NorthTests.swift */; };
+		16362C612309BA8A00B3D8FB /* SouthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C602309BA8A00B3D8FB /* SouthTests.swift */; };
+		16362C632309BAA300B3D8FB /* WestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C622309BAA300B3D8FB /* WestTests.swift */; };
 		1675635723098CB60013D119 /* RoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619404223098B6300A8DB9F /* RoverTests.swift */; };
 		1675635A23098E340013D119 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635923098E340013D119 /* Maps.swift */; };
 		1675635C23098E7F0013D119 /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635B23098E7F0013D119 /* Rover.swift */; };
@@ -50,6 +52,8 @@
 		16362C592309B8E300B3D8FB /* West.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = West.swift; sourceTree = "<group>"; };
 		16362C5B2309B8F400B3D8FB /* EastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastTests.swift; sourceTree = "<group>"; };
 		16362C5E2309BA0500B3D8FB /* NorthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthTests.swift; sourceTree = "<group>"; };
+		16362C602309BA8A00B3D8FB /* SouthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthTests.swift; sourceTree = "<group>"; };
+		16362C622309BAA300B3D8FB /* WestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestTests.swift; sourceTree = "<group>"; };
 		1675635923098E340013D119 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		1675635B23098E7F0013D119 /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
 		1675635D23098EF90013D119 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
@@ -120,7 +124,9 @@
 				16362C532309B8B400B3D8FB /* North.swift */,
 				16362C5E2309BA0500B3D8FB /* NorthTests.swift */,
 				16362C572309B8D600B3D8FB /* South.swift */,
+				16362C602309BA8A00B3D8FB /* SouthTests.swift */,
 				16362C592309B8E300B3D8FB /* West.swift */,
+				16362C622309BAA300B3D8FB /* WestTests.swift */,
 			);
 			path = Direction;
 			sourceTree = "<group>";
@@ -253,6 +259,8 @@
 			files = (
 				1675635723098CB60013D119 /* RoverTests.swift in Sources */,
 				16362C5F2309BA0500B3D8FB /* NorthTests.swift in Sources */,
+				16362C632309BAA300B3D8FB /* WestTests.swift in Sources */,
+				16362C612309BA8A00B3D8FB /* SouthTests.swift in Sources */,
 				16362C5D2309B92D00B3D8FB /* EastTests.swift in Sources */,
 				16756362230997B30013D119 /* DirectionTests.swift in Sources */,
 			);

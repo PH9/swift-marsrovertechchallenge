@@ -11,15 +11,12 @@ class Rover {
     self.face = face
   }
 
-  func operate(command: Command) {
-    switch command {
-    case .turnLeft:
-      operateTurnLeftCommand()
-    case .turnRight:
-      operateTurnRightCommand()
-    case .move:
-      operateMoveCommand()
-    }
+  func operate(command: CommandProtocol) {
+    let position = Position(x: x, y: y, face: face)
+    let newPosition = command.move(form: position, with: maps)
+    x = newPosition.x
+    y = newPosition.y
+    face = newPosition.face
   }
 
   func operateMoveCommand() {
@@ -39,10 +36,29 @@ class Rover {
   var position: Position {
     return Position(x: x, y: y, face: face)
   }
+}
 
-  enum Command: String {
-    case turnLeft = "L"
-    case turnRight = "R"
-    case move = "M"
+protocol CommandProtocol {
+  func move(form position: Position, with maps: Maps?) -> Position
+}
+
+struct TurnLeft: CommandProtocol {
+
+  func move(form position: Position, with maps: Maps?) -> Position {
+    return Position(x: position.x, y: position.y, face: position.face.left)
+  }
+}
+
+struct TurnRight: CommandProtocol {
+
+  func move(form position: Position, with maps: Maps?) -> Position {
+    return Position(x: position.x, y: position.y, face: position.face.right)
+  }
+}
+
+struct Move: CommandProtocol {
+
+  func move(form position: Position, with maps: Maps?) -> Position {
+    return position.face.move(form: position, with: maps)
   }
 }

@@ -16,4 +16,17 @@ enum Direction: String {
       return .north
     }
   }
+
+  var nextCounterclockwise: Direction {
+    switch self {
+    case .north:
+      return .west
+    case .west:
+      return .south
+    case .south:
+      return .east
+    case .east:
+      return .north
+    }
+  }
 }

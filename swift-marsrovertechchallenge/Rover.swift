@@ -21,16 +21,7 @@ class Rover {
   }
 
   func operateTurnLeftCommand() {
-    switch face {
-    case .north:
-      face = .west
-    case .west:
-      face = .south
-    case .south:
-      face = .east
-    case .east:
-      face = .north
-    }
+    face = face.nextCounterclockwise
   }
 
   func operateTurnRightCommand() {

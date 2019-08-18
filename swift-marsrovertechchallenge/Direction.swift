@@ -4,7 +4,7 @@ enum Direction: String {
   case south = "S"
   case east = "E"
 
-  var nextClockWise: Direction {
+  var nextClockwise: Direction {
     switch self {
     case .north:
       return .east

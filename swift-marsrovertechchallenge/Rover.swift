@@ -34,7 +34,7 @@ class Rover {
   }
 
   func operateTurnRightCommand() {
-    face = face.nextClockWise
+    face = face.nextClockwise
   }
 
   var position: Position {

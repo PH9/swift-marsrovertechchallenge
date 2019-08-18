@@ -120,8 +120,8 @@
 				16007A162309C8F300446F5B /* ReadFileTests.swift */,
 				1675635B23098E7F0013D119 /* Rover.swift */,
 				1619404223098B6300A8DB9F /* RoverTests.swift */,
-				16362C642309C12700B3D8FB /* Command */,
 				169DA3FA2309CABA001AC435 /* for-test.txt */,
+				16362C642309C12700B3D8FB /* Command */,
 			);
 			path = "swift-marsrovertechchallenge";
 			sourceTree = "<group>";

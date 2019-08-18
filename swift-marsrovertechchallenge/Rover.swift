@@ -10,12 +10,15 @@ class Rover {
     self.y = y
     self.face = face
   }
-  
+
   func operate(command: Command) {
     switch command {
     case .turnLeft:
       if face == .west {
         face = .south
+        return
+      } else if face == .south {
+        face = .east
         return
       }
     }
@@ -25,7 +28,7 @@ class Rover {
   var position: Position {
     return Position(x: x, y: y, face: face)
   }
-  
+
   enum Command: String {
     case turnLeft = "L"
   }

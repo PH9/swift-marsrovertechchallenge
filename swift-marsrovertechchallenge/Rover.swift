@@ -12,6 +12,13 @@ class Rover {
   }
   
   func operate(command: Command) {
+    switch command {
+    case .turnLeft:
+      if face == .west {
+        face = .south
+        return
+      }
+    }
     face = .west
   }
 

@@ -8,6 +8,6 @@ class Rover {
   }
 
   func operate(command: CommandProtocol) {
-    position = command.move(form: position, with: maps)
+    position = command.move(from: position, with: maps)
   }
 }

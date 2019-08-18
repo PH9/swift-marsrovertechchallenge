@@ -15,7 +15,7 @@ class SouthTests: XCTestCase {
 
   func testMove() {
     let position = Position(x: 1, y: 2, face: South())
-    let newPosition = South().move(form: position, with: nil)
+    let newPosition = South().move(from: position, with: nil)
     let expectedPosition = Position(x: 1, y: 1, face: South())
     XCTAssertEqual(expectedPosition, newPosition)
   }
@@ -23,7 +23,7 @@ class SouthTests: XCTestCase {
   func testMoveWithLimit_shouldBeTheSamePositionAsBefore() {
     let position = Position(x: 1, y: 0, face: South())
     let maps = Maps(maxX: 1, maxY: 2)
-    let newPosition = South().move(form: position, with: maps)
+    let newPosition = South().move(from: position, with: maps)
     XCTAssertEqual(position, newPosition)
   }
 }

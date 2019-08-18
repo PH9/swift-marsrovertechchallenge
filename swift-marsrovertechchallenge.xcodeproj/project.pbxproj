@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16007A122309C38200446F5B /* PositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16007A112309C38200446F5B /* PositionTests.swift */; };
+		16007A142309C49D00446F5B /* CommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16007A132309C49D00446F5B /* CommandTests.swift */; };
 		1619403E23098B6300A8DB9F /* swift_marsrovertechchallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1619403423098B6300A8DB9F /* swift_marsrovertechchallenge.framework */; };
 		1619404523098B6300A8DB9F /* swift_marsrovertechchallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = 1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16362C4F2309B87500B3D8FB /* CommandProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C4E2309B87500B3D8FB /* CommandProtocol.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		16007A112309C38200446F5B /* PositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionTests.swift; sourceTree = "<group>"; };
+		16007A132309C49D00446F5B /* CommandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTests.swift; sourceTree = "<group>"; };
 		1619403423098B6300A8DB9F /* swift_marsrovertechchallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swift_marsrovertechchallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swift_marsrovertechchallenge.h; sourceTree = "<group>"; };
 		1619403823098B6300A8DB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				16362C502309B88400B3D8FB /* Command.swift */,
 				16362C4E2309B87500B3D8FB /* CommandProtocol.swift */,
+				16007A132309C49D00446F5B /* CommandTests.swift */,
 				16362C522309B8A000B3D8FB /* Direction */,
 			);
 			path = Command;
@@ -275,6 +278,7 @@
 				16362C612309BA8A00B3D8FB /* SouthTests.swift in Sources */,
 				16362C5D2309B92D00B3D8FB /* EastTests.swift in Sources */,
 				16756362230997B30013D119 /* DirectionTests.swift in Sources */,
+				16007A142309C49D00446F5B /* CommandTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

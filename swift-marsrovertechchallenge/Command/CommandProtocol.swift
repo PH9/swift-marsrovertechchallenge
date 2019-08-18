@@ -1,3 +1,3 @@
 protocol CommandProtocol {
-  func move(form position: Position, with maps: Maps?) -> Position
+  func move(from position: Position, with maps: Maps?) -> Position
 }

@@ -15,7 +15,7 @@ class NorthTests: XCTestCase {
 
   func testMove() {
     let position = Position(x: 1, y: 2, face: North())
-    let newPosition = North().move(form: position, with: nil)
+    let newPosition = North().move(from: position, with: nil)
     let expectedPosition = Position(x: 1, y: 3, face: North())
     XCTAssertEqual(expectedPosition, newPosition)
   }
@@ -23,7 +23,7 @@ class NorthTests: XCTestCase {
   func testMoveAndReachMaxY_shouldBeTheSamePositionAsBefore() {
     let position = Position(x: 1, y: 99, face: North())
     let maps = Maps(maxX: 88, maxY: 99)
-    let newPosition = North().move(form: position, with: maps)
+    let newPosition = North().move(from: position, with: maps)
     XCTAssertEqual(position, newPosition)
   }
 }

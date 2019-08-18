@@ -7,7 +7,7 @@ class RoverTests: XCTestCase {
 
     private(set) var moveCalledCount = 0
 
-    func move(form position: Position, with maps: Maps?) -> Position {
+    func move(from position: Position, with maps: Maps?) -> Position {
       moveCalledCount += 1
       return Position(x: 8, y: 9, face: South())
     }

@@ -1,3 +1,19 @@
+class CommandFactory {
+
+  static func create(rawValue: String) -> CommandProtocol {
+    switch rawValue {
+    case "L":
+      return TurnLeft()
+    case "R":
+      return TurnRight()
+    case "M":
+      return Move()
+    default:
+      fatalError("Not support with comamnd \(rawValue)")
+    }
+  }
+}
+
 struct TurnLeft: CommandProtocol {
 
   func move(from position: Position, with maps: Maps?) -> Position {

@@ -32,6 +32,7 @@
 		169DA3FB2309CABA001AC435 /* for-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 169DA3FA2309CABA001AC435 /* for-test.txt */; };
 		169DA3FD2309CB07001AC435 /* MarsOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DA3FC2309CB07001AC435 /* MarsOperationTests.swift */; };
 		169DA3FF2309CB69001AC435 /* MarsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DA3FE2309CB69001AC435 /* MarsOperation.swift */; };
+		16CD48E82309CE5500CEA7B8 /* for-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 169DA3FA2309CABA001AC435 /* for-test.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16CD48E82309CE5500CEA7B8 /* for-test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,10 @@ class Rover {
     case .turnRight:
       operateTurnRightCommand()
     case .move:
+      if face == .east {
+        x += 1
+        return
+      }
       if y + 1 <= maps?.maxY ?? Int.max {
         y += 1
       }

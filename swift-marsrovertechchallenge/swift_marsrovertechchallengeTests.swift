@@ -10,35 +10,23 @@ class swift_marsrovertechchallengeTests: XCTestCase {
     let maps = Maps(maxX: 5, maxY: 5)
   }
   
-  func testWhenRoverFaceNorth_afterTurnLeftShouldFaceWest() {
+  func testWhenTurnLeftDirectionShouldBeNextCounterclockwise() {
     let rover = Rover(x: dummyX, y: dummyY, face: .north)
-    rover.operate(command: .turnLeft)
 
-    let expectedPosition = Position(x: dummyX, y: dummyY, face: .west)
-    XCTAssertEqual(expectedPosition, rover.position)
-  }
-  
-  func testWhenRoverFaceWest_afterTurnLeftShouldFaceSouth() {
-    let rover = Rover(x: dummyX, y: dummyY, face: .west)
     rover.operate(command: .turnLeft)
-    
-    let expectedPosition = Position(x: dummyX, y: dummyY, face: .south)
-    XCTAssertEqual(expectedPosition, rover.position)
-  }
-  
-  func testWhenRoverFaceSouth_afterTurnLeftShouldFaceEast() {
-    let rover = Rover(x: dummyX, y: dummyY, face: .south)
-    rover.operate(command: .turnLeft)
-    
-    let expectedPosition = Position(x: dummyX, y: dummyY, face: .east)
-    XCTAssertEqual(expectedPosition, rover.position)
-  }
+    let expectedFaceWest = Position(x: dummyX, y: dummyY, face: .west)
+    XCTAssertEqual(expectedFaceWest, rover.position)
 
-  func testWhenRoverFaceEast_afterTurnLeftShouldFaceNorth() {
-    let rover = Rover(x: dummyX, y: dummyY, face: .east)
     rover.operate(command: .turnLeft)
+    let expectedFaceSouth = Position(x: dummyX, y: dummyY, face: .south)
+    XCTAssertEqual(expectedFaceSouth, rover.position)
 
-    let expectedPosition = Position(x: dummyX, y: dummyY, face: .north)
-    XCTAssertEqual(expectedPosition, rover.position)
+    rover.operate(command: .turnLeft)
+    let expectedFaceEast = Position(x: dummyX, y: dummyY, face: .east)
+    XCTAssertEqual(expectedFaceEast, rover.position)
+
+    rover.operate(command: .turnLeft)
+    let expectedFaceNorth = Position(x: dummyX, y: dummyY, face: .north)
+    XCTAssertEqual(expectedFaceNorth, rover.position)
   }
 }

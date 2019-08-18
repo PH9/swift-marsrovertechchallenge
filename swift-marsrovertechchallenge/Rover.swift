@@ -1,39 +1,13 @@
 class Rover {
   
   var maps: Maps?
-  private var x: Int
-  private var y: Int
-  private var face: DirectionProtocol
+  private(set) var position: Position
 
   init(x: Int, y: Int, face: DirectionProtocol) {
-    self.x = x
-    self.y = y
-    self.face = face
+    position = Position(x: x, y: y, face: face)
   }
 
   func operate(command: CommandProtocol) {
-    let position = Position(x: x, y: y, face: face)
-    let newPosition = command.move(form: position, with: maps)
-    x = newPosition.x
-    y = newPosition.y
-    face = newPosition.face
-  }
-
-  func operateMoveCommand() {
-    let position = face.move(form: self.position, with: maps)
-    x = position.x
-    y = position.y
-  }
-
-  func operateTurnLeftCommand() {
-    face = face.left
-  }
-
-  func operateTurnRightCommand() {
-    face = face.right
-  }
-
-  var position: Position {
-    return Position(x: x, y: y, face: face)
+    position = command.move(form: position, with: maps)
   }
 }

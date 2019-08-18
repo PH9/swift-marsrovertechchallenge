@@ -3,9 +3,9 @@ class Rover {
   var maps: Maps?
   private var x: Int
   private var y: Int
-  private var face: Direction
+  private var face: DirectionProtocol
 
-  init(x: Int, y: Int, face: Direction) {
+  init(x: Int, y: Int, face: DirectionProtocol) {
     self.x = x
     self.y = y
     self.face = face
@@ -23,32 +23,17 @@ class Rover {
   }
 
   func operateMoveCommand() {
-    switch face {
-    case .north:
-      if y + 1 <= maps?.maxY ?? Int.max {
-        y += 1
-      }
-    case .east:
-      if x + 1 <= maps?.maxX ?? Int.max {
-        x += 1
-      }
-    case .south:
-      if y - 1 >= 0 {
-        y -= 1
-      }
-    case .west:
-      if x - 1 >= 0 {
-        x -= 1
-      }
-    }
+    let position = face.move(form: self.position, with: maps)
+    x = position.x
+    y = position.y
   }
 
   func operateTurnLeftCommand() {
-    face = face.nextCounterclockwise
+    face = face.left
   }
 
   func operateTurnRightCommand() {
-    face = face.nextClockwise
+    face = face.right
   }
 
   var position: Position {

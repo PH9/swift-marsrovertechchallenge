@@ -4,9 +4,9 @@ import XCTest
 class DirectionTests: XCTestCase {
 
     func testDirectionRawValue() {
-      XCTAssertEqual("N", Direction.north.rawValue)
-      XCTAssertEqual("W", Direction.west.rawValue)
-      XCTAssertEqual("S", Direction.south.rawValue)
-      XCTAssertEqual("E", Direction.east.rawValue)
+      XCTAssertEqual("N", North().rawValue)
+      XCTAssertEqual("W", West().rawValue)
+      XCTAssertEqual("S", South().rawValue)
+      XCTAssertEqual("E", East().rawValue)
     }
 }

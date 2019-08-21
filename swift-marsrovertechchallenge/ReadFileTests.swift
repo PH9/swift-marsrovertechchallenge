@@ -4,7 +4,7 @@ import XCTest
 class ReadFileTests: XCTestCase {
 
   func testReadFile() {
-    let string = try? Utils().readFile(name: "for-test.txt")
+    let string = try? Utils().readFile(name: "ReadFile-dummy.txt")
     XCTAssertEqual(
       """
 5 5
@@ -13,7 +13,6 @@ LMLMLMLMM
 3 3 E
 MMRMMRMRRM
 4 4 S
-MMMRRLLXXLM
 
 """, string)
   }

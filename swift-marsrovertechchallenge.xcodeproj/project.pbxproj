@@ -31,6 +31,7 @@
 		16756362230997B30013D119 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16756361230997B30013D119 /* DirectionTests.swift */; };
 		1686BB47230D1FE300EA4DD4 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1686BB46230D1FE300EA4DD4 /* Command.swift */; };
 		1686BB49230D20FA00EA4DD4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1686BB48230D20FA00EA4DD4 /* String+.swift */; };
+		1686BB4B230D239B00EA4DD4 /* ReadFile-dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1686BB4A230D239B00EA4DD4 /* ReadFile-dummy.txt */; };
 		169DA3FB2309CABA001AC435 /* for-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 169DA3FA2309CABA001AC435 /* for-test.txt */; };
 		169DA3FD2309CB07001AC435 /* MarsOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DA3FC2309CB07001AC435 /* MarsOperationTests.swift */; };
 		169DA3FF2309CB69001AC435 /* MarsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DA3FE2309CB69001AC435 /* MarsOperation.swift */; };
@@ -75,6 +76,7 @@
 		16756361230997B30013D119 /* DirectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
 		1686BB46230D1FE300EA4DD4 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		1686BB48230D20FA00EA4DD4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		1686BB4A230D239B00EA4DD4 /* ReadFile-dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ReadFile-dummy.txt"; sourceTree = "<group>"; };
 		169DA3FA2309CABA001AC435 /* for-test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "for-test.txt"; sourceTree = "<group>"; };
 		169DA3FC2309CB07001AC435 /* MarsOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsOperationTests.swift; sourceTree = "<group>"; };
 		169DA3FE2309CB69001AC435 /* MarsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsOperation.swift; sourceTree = "<group>"; };
@@ -131,9 +133,10 @@
 				16007A162309C8F300446F5B /* ReadFileTests.swift */,
 				1675635B23098E7F0013D119 /* Rover.swift */,
 				1619404223098B6300A8DB9F /* RoverTests.swift */,
-				169DA3FA2309CABA001AC435 /* for-test.txt */,
-				16362C642309C12700B3D8FB /* Command */,
 				1686BB48230D20FA00EA4DD4 /* String+.swift */,
+				169DA3FA2309CABA001AC435 /* for-test.txt */,
+				1686BB4A230D239B00EA4DD4 /* ReadFile-dummy.txt */,
+				16362C642309C12700B3D8FB /* Command */,
 			);
 			path = "swift-marsrovertechchallenge";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				169DA3FB2309CABA001AC435 /* for-test.txt in Resources */,
+				1686BB4B230D239B00EA4DD4 /* ReadFile-dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

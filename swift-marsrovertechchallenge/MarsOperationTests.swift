@@ -4,7 +4,7 @@ import XCTest
 class MarsOperationTests: XCTestCase {
 
   func testRunOperation() {
-    let operation = MarsOperation(fileName: "for-test.txt")
+    let operation = try! MarsOperation(fileName: "for-test.txt")
     let actual = operation.run()
     let expectedPositions = [
         Position(x: 1, y: 3, face: North()),

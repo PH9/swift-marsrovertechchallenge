@@ -5,8 +5,9 @@ class MarsOperation {
   let maps: Maps
   let operations: Operations
 
-  init(fileName: String) {
-    let string = (try! Utils().readFile(name: fileName)).withoutNewlines
+  init(fileName: String) throws {
+    let string = (try Utils().readFile(name: fileName)).withoutNewlines
+
     let mapsMax = string[0].components(separatedBy: " ")
     self.maps = Maps(maxX: Int(mapsMax[0])!, maxY: Int(mapsMax[1])!)
 

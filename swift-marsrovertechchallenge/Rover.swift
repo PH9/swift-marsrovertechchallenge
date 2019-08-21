@@ -7,14 +7,19 @@ class Rover: CustomDebugStringConvertible {
     position = Position(x: x, y: y, face: face)
   }
 
-  func operate(command: CommandProtocol) {
+  @discardableResult
+  func operate(command: CommandProtocol) -> Position {
     position = command.move(from: position, with: maps)
+    return position
   }
 
-  func operate(commands: [CommandProtocol]) {
+  @discardableResult
+  func operate(commands: [CommandProtocol]) -> Position {
     for command in commands {
       position = command.move(from: position, with: maps)
     }
+
+    return position
   }
 
   var debugDescription: String {

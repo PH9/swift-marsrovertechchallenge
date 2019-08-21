@@ -34,8 +34,7 @@ class MarsOperation {
 
   func run() -> [Position] {
     let result = operations.compactMap { rover -> Position in
-      rover.0.operate(commands: rover.1)
-        return rover.0.position
+      return rover.0.operate(commands: rover.1)
     }
 
     return result

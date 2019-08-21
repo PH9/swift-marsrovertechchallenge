@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16007A122309C38200446F5B /* PositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16007A112309C38200446F5B /* PositionTests.swift */; };
+		16007A142309C49D00446F5B /* CommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16007A132309C49D00446F5B /* CommandTests.swift */; };
+		16007A172309C8F300446F5B /* ReadFileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16007A162309C8F300446F5B /* ReadFileTests.swift */; };
+		16007A192309C96700446F5B /* ReadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16007A182309C96700446F5B /* ReadFile.swift */; };
 		1619403E23098B6300A8DB9F /* swift_marsrovertechchallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1619403423098B6300A8DB9F /* swift_marsrovertechchallenge.framework */; };
 		1619404523098B6300A8DB9F /* swift_marsrovertechchallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = 1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16362C4F2309B87500B3D8FB /* CommandProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C4E2309B87500B3D8FB /* CommandProtocol.swift */; };
+		16362C512309B88400B3D8FB /* CommandFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C502309B88400B3D8FB /* CommandFactory.swift */; };
+		16362C542309B8B400B3D8FB /* North.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C532309B8B400B3D8FB /* North.swift */; };
+		16362C562309B8C300B3D8FB /* East.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C552309B8C300B3D8FB /* East.swift */; };
+		16362C582309B8D600B3D8FB /* South.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C572309B8D600B3D8FB /* South.swift */; };
+		16362C5A2309B8E300B3D8FB /* West.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C592309B8E300B3D8FB /* West.swift */; };
+		16362C5D2309B92D00B3D8FB /* EastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C5B2309B8F400B3D8FB /* EastTests.swift */; };
+		16362C5F2309BA0500B3D8FB /* NorthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C5E2309BA0500B3D8FB /* NorthTests.swift */; };
+		16362C612309BA8A00B3D8FB /* SouthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C602309BA8A00B3D8FB /* SouthTests.swift */; };
+		16362C632309BAA300B3D8FB /* WestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16362C622309BAA300B3D8FB /* WestTests.swift */; };
 		1675635723098CB60013D119 /* RoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1619404223098B6300A8DB9F /* RoverTests.swift */; };
 		1675635A23098E340013D119 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635923098E340013D119 /* Maps.swift */; };
 		1675635C23098E7F0013D119 /* Rover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635B23098E7F0013D119 /* Rover.swift */; };
 		1675635E23098EF90013D119 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635D23098EF90013D119 /* Direction.swift */; };
 		167563602309903A0013D119 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1675635F2309903A0013D119 /* Position.swift */; };
 		16756362230997B30013D119 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16756361230997B30013D119 /* DirectionTests.swift */; };
+		1686BB47230D1FE300EA4DD4 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1686BB46230D1FE300EA4DD4 /* Command.swift */; };
+		1686BB49230D20FA00EA4DD4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1686BB48230D20FA00EA4DD4 /* String+.swift */; };
+		1686BB4B230D239B00EA4DD4 /* ReadFile-dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1686BB4A230D239B00EA4DD4 /* ReadFile-dummy.txt */; };
+		169DA3FB2309CABA001AC435 /* for-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 169DA3FA2309CABA001AC435 /* for-test.txt */; };
+		169DA3FD2309CB07001AC435 /* MarsOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DA3FC2309CB07001AC435 /* MarsOperationTests.swift */; };
+		169DA3FF2309CB69001AC435 /* MarsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DA3FE2309CB69001AC435 /* MarsOperation.swift */; };
+		16CD48E82309CE5500CEA7B8 /* for-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 169DA3FA2309CABA001AC435 /* for-test.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,17 +49,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16007A112309C38200446F5B /* PositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionTests.swift; sourceTree = "<group>"; };
+		16007A132309C49D00446F5B /* CommandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTests.swift; sourceTree = "<group>"; };
+		16007A162309C8F300446F5B /* ReadFileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadFileTests.swift; sourceTree = "<group>"; };
+		16007A182309C96700446F5B /* ReadFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadFile.swift; sourceTree = "<group>"; };
 		1619403423098B6300A8DB9F /* swift_marsrovertechchallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swift_marsrovertechchallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swift_marsrovertechchallenge.h; sourceTree = "<group>"; };
 		1619403823098B6300A8DB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1619403D23098B6300A8DB9F /* swift-marsrovertechchallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-marsrovertechchallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1619404223098B6300A8DB9F /* RoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverTests.swift; sourceTree = "<group>"; };
 		1619404423098B6300A8DB9F /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
+		16362C4E2309B87500B3D8FB /* CommandProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandProtocol.swift; sourceTree = "<group>"; };
+		16362C502309B88400B3D8FB /* CommandFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandFactory.swift; sourceTree = "<group>"; };
+		16362C532309B8B400B3D8FB /* North.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = North.swift; sourceTree = "<group>"; };
+		16362C552309B8C300B3D8FB /* East.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = East.swift; sourceTree = "<group>"; };
+		16362C572309B8D600B3D8FB /* South.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = South.swift; sourceTree = "<group>"; };
+		16362C592309B8E300B3D8FB /* West.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = West.swift; sourceTree = "<group>"; };
+		16362C5B2309B8F400B3D8FB /* EastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastTests.swift; sourceTree = "<group>"; };
+		16362C5E2309BA0500B3D8FB /* NorthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthTests.swift; sourceTree = "<group>"; };
+		16362C602309BA8A00B3D8FB /* SouthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthTests.swift; sourceTree = "<group>"; };
+		16362C622309BAA300B3D8FB /* WestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestTests.swift; sourceTree = "<group>"; };
 		1675635923098E340013D119 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		1675635B23098E7F0013D119 /* Rover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rover.swift; sourceTree = "<group>"; };
 		1675635D23098EF90013D119 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		1675635F2309903A0013D119 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		16756361230997B30013D119 /* DirectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
+		1686BB46230D1FE300EA4DD4 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		1686BB48230D20FA00EA4DD4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		1686BB4A230D239B00EA4DD4 /* ReadFile-dummy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ReadFile-dummy.txt"; sourceTree = "<group>"; };
+		169DA3FA2309CABA001AC435 /* for-test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "for-test.txt"; sourceTree = "<group>"; };
+		169DA3FC2309CB07001AC435 /* MarsOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsOperationTests.swift; sourceTree = "<group>"; };
+		169DA3FE2309CB69001AC435 /* MarsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +124,58 @@
 				1619403723098B6300A8DB9F /* swift_marsrovertechchallenge.h */,
 				1619403823098B6300A8DB9F /* Info.plist */,
 				1619404423098B6300A8DB9F /* InfoTests.plist */,
-				1675635D23098EF90013D119 /* Direction.swift */,
-				16756361230997B30013D119 /* DirectionTests.swift */,
 				1675635923098E340013D119 /* Maps.swift */,
+				169DA3FE2309CB69001AC435 /* MarsOperation.swift */,
+				169DA3FC2309CB07001AC435 /* MarsOperationTests.swift */,
 				1675635F2309903A0013D119 /* Position.swift */,
+				16007A112309C38200446F5B /* PositionTests.swift */,
 				1675635B23098E7F0013D119 /* Rover.swift */,
 				1619404223098B6300A8DB9F /* RoverTests.swift */,
+				169DA3FA2309CABA001AC435 /* for-test.txt */,
+				16362C642309C12700B3D8FB /* Command */,
+				1686BB4C230D241900EA4DD4 /* Library */,
 			);
 			path = "swift-marsrovertechchallenge";
+			sourceTree = "<group>";
+		};
+		16362C522309B8A000B3D8FB /* Direction */ = {
+			isa = PBXGroup;
+			children = (
+				1675635D23098EF90013D119 /* Direction.swift */,
+				16756361230997B30013D119 /* DirectionTests.swift */,
+				16362C552309B8C300B3D8FB /* East.swift */,
+				16362C5B2309B8F400B3D8FB /* EastTests.swift */,
+				16362C532309B8B400B3D8FB /* North.swift */,
+				16362C5E2309BA0500B3D8FB /* NorthTests.swift */,
+				16362C572309B8D600B3D8FB /* South.swift */,
+				16362C602309BA8A00B3D8FB /* SouthTests.swift */,
+				16362C592309B8E300B3D8FB /* West.swift */,
+				16362C622309BAA300B3D8FB /* WestTests.swift */,
+			);
+			path = Direction;
+			sourceTree = "<group>";
+		};
+		16362C642309C12700B3D8FB /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				1686BB46230D1FE300EA4DD4 /* Command.swift */,
+				16362C502309B88400B3D8FB /* CommandFactory.swift */,
+				16362C4E2309B87500B3D8FB /* CommandProtocol.swift */,
+				16007A132309C49D00446F5B /* CommandTests.swift */,
+				16362C522309B8A000B3D8FB /* Direction */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		1686BB4C230D241900EA4DD4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				16007A182309C96700446F5B /* ReadFile.swift */,
+				16007A162309C8F300446F5B /* ReadFileTests.swift */,
+				1686BB48230D20FA00EA4DD4 /* String+.swift */,
+				1686BB4A230D239B00EA4DD4 /* ReadFile-dummy.txt */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +270,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169DA3FB2309CABA001AC435 /* for-test.txt in Resources */,
+				1686BB4B230D239B00EA4DD4 /* ReadFile-dummy.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16CD48E82309CE5500CEA7B8 /* for-test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +290,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16362C4F2309B87500B3D8FB /* CommandProtocol.swift in Sources */,
 				1675635C23098E7F0013D119 /* Rover.swift in Sources */,
 				1675635A23098E340013D119 /* Maps.swift in Sources */,
 				167563602309903A0013D119 /* Position.swift in Sources */,
+				1686BB47230D1FE300EA4DD4 /* Command.swift in Sources */,
+				16362C562309B8C300B3D8FB /* East.swift in Sources */,
+				16007A192309C96700446F5B /* ReadFile.swift in Sources */,
+				16362C542309B8B400B3D8FB /* North.swift in Sources */,
+				16362C5A2309B8E300B3D8FB /* West.swift in Sources */,
+				16362C582309B8D600B3D8FB /* South.swift in Sources */,
+				16362C512309B88400B3D8FB /* CommandFactory.swift in Sources */,
+				169DA3FF2309CB69001AC435 /* MarsOperation.swift in Sources */,
+				1686BB49230D20FA00EA4DD4 /* String+.swift in Sources */,
 				1675635E23098EF90013D119 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,8 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169DA3FD2309CB07001AC435 /* MarsOperationTests.swift in Sources */,
 				1675635723098CB60013D119 /* RoverTests.swift in Sources */,
+				16007A122309C38200446F5B /* PositionTests.swift in Sources */,
+				16007A172309C8F300446F5B /* ReadFileTests.swift in Sources */,
+				16362C5F2309BA0500B3D8FB /* NorthTests.swift in Sources */,
+				16362C632309BAA300B3D8FB /* WestTests.swift in Sources */,
+				16362C612309BA8A00B3D8FB /* SouthTests.swift in Sources */,
+				16362C5D2309B92D00B3D8FB /* EastTests.swift in Sources */,
 				16756362230997B30013D119 /* DirectionTests.swift in Sources */,
+				16007A142309C49D00446F5B /* CommandTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,8 +16,8 @@ class MarsOperation {
       rover.maps = maps
 
       let c = string[i + 1]
-      let commands: [CommandProtocol] = c.compactMap { c -> CommandProtocol in
-        return CommandFactory().create(rawValue: String(c))
+      let commands: [CommandProtocol] = c.compactMap { c -> CommandProtocol? in
+        return try? CommandFactory().create(rawValue: String(c))
       }
 
       rovers.append((rover, commands))

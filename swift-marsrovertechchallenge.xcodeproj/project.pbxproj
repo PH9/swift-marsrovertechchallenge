@@ -129,14 +129,11 @@
 				169DA3FC2309CB07001AC435 /* MarsOperationTests.swift */,
 				1675635F2309903A0013D119 /* Position.swift */,
 				16007A112309C38200446F5B /* PositionTests.swift */,
-				16007A182309C96700446F5B /* ReadFile.swift */,
-				16007A162309C8F300446F5B /* ReadFileTests.swift */,
 				1675635B23098E7F0013D119 /* Rover.swift */,
 				1619404223098B6300A8DB9F /* RoverTests.swift */,
-				1686BB48230D20FA00EA4DD4 /* String+.swift */,
 				169DA3FA2309CABA001AC435 /* for-test.txt */,
-				1686BB4A230D239B00EA4DD4 /* ReadFile-dummy.txt */,
 				16362C642309C12700B3D8FB /* Command */,
+				1686BB4C230D241900EA4DD4 /* Library */,
 			);
 			path = "swift-marsrovertechchallenge";
 			sourceTree = "<group>";
@@ -168,6 +165,17 @@
 				16362C522309B8A000B3D8FB /* Direction */,
 			);
 			path = Command;
+			sourceTree = "<group>";
+		};
+		1686BB4C230D241900EA4DD4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				16007A182309C96700446F5B /* ReadFile.swift */,
+				16007A162309C8F300446F5B /* ReadFileTests.swift */,
+				1686BB48230D20FA00EA4DD4 /* String+.swift */,
+				1686BB4A230D239B00EA4DD4 /* ReadFile-dummy.txt */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

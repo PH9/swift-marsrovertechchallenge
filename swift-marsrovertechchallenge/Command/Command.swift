@@ -31,3 +31,10 @@ class Move: NSObject, CommandProtocol {
 class M: Move {
 
 }
+
+class DoNothing: CommandProtocol {
+
+  func move(from position: Position, with maps: Maps?) -> Position {
+    return position
+  }
+}

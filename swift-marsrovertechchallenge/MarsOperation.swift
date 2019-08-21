@@ -1,7 +1,9 @@
+typealias Operations = [(Rover, [CommandProtocol])]
+
 class MarsOperation {
 
   let maps: Maps
-  let rovers: [(Rover, [CommandProtocol])]
+  let operations: Operations
 
   init(fileName: String) {
     // Remove empty lines...
@@ -9,7 +11,11 @@ class MarsOperation {
     let mapsMax = string[0].components(separatedBy: " ")
     self.maps = Maps(maxX: Int(mapsMax[0])!, maxY: Int(mapsMax[1])!)
 
-    var rovers: [(Rover, [CommandProtocol])] = []
+    self.operations = MarsOperation.convertStringToOperations(string: string, with: maps)
+  }
+
+  private static func convertStringToOperations(string: [Substring], with maps: Maps) -> Operations {
+    var operations: [(Rover, [CommandProtocol])] = []
     for i in 1 ..< string.count where i % 2 != 0 {
       let s = string[i].split(separator: " ")
       let rover = Rover(x: Int(s[0])!, y: Int(s[1])!, face: DirectionFactory.create(rawValue: String(s[2])))
@@ -20,14 +26,14 @@ class MarsOperation {
         return try? CommandFactory().create(rawValue: String(c))
       }
 
-      rovers.append((rover, commands))
+      operations.append((rover, commands))
     }
 
-    self.rovers = rovers
+    return operations
   }
 
   func run() -> [Position] {
-    let result = rovers.compactMap { rover -> Position in
+    let result = operations.compactMap { rover -> Position in
       rover.0.operate(commands: rover.1)
         return rover.0.position
     }

@@ -26,12 +26,12 @@ class MarsOperation {
     self.rovers = rovers
   }
 
-  func run() -> String {
-    let result = rovers.compactMap { rover -> String in
+  func run() -> [Position] {
+    let result = rovers.compactMap { rover -> Position in
       rover.0.operate(commands: rover.1)
-      return "\(rover.0.position.x) \(rover.0.position.y) \(rover.0.position.face.rawValue)"
+        return rover.0.position
     }
 
-    return result.joined(separator: "\n")
+    return result
   }
 }

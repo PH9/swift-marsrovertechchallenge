@@ -5,10 +5,12 @@ class MarsOperationTests: XCTestCase {
 
   func testRunOperation() {
     let operation = MarsOperation(fileName: "for-test.txt")
-    let result = operation.run()
-    XCTAssertEqual("""
-1 3 N
-5 1 E
-""", result)
+    let actual = operation.run()
+    let expectedPositions = [
+        Position(x: 1, y: 3, face: North()),
+        Position(x: 5, y: 1, face: East())
+    ]
+
+    XCTAssertEqual(expectedPositions, actual)
   }
 }

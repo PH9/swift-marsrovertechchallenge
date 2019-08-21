@@ -6,8 +6,7 @@ class MarsOperation {
   let operations: Operations
 
   init(fileName: String) {
-    // Remove empty lines...
-    let string = ((try! Utils().readFile(name: fileName)).split { $0.isNewline }).joined(separator: "\n").split(separator: "\n")
+    let string = (try! Utils().readFile(name: fileName)).withoutNewlines
     let mapsMax = string[0].components(separatedBy: " ")
     self.maps = Maps(maxX: Int(mapsMax[0])!, maxY: Int(mapsMax[1])!)
 
